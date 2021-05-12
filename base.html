@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE TEMPLATE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <!---header--->
+
+    <header class="header-customized">
+     <nav class="navbar navbar-expand-lg navbar-customized">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Social Media</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">بلاگ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">درباره ما</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  حسابرسی
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">ورود</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ثبت نام</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control search-form me-2" type="search" placeholder="جستجو بین مطالب" aria-label="Search">
+              <button class="btn btn-search" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbot" align="center">
+        <div style="margin-top: 15%;">
+        <h1 class="display-4">دست نگه دارید</h1>
+        <p class="lead">پیش از هرچیزی ابتدا در وبسایت ثبت نام کنید!!</p>
+        <hr class="my-4">
+        <p>با ثبت نام در سایت شما می توانید از خدمات متعدد ما بهره مند شوید.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">ثبت نام</a>
+        <a class="btn btn-danger btn-lg" href="#loginForm" role="button">از قبل اکانت دارم</a>
+        </div>
+      </div>
+    </header>
+
+    <!----ending header---->
+
+    <!----body---->
+    
+    <div>
+    <div class="container-fluid d-lg-flex bg-dark justify-content-center" id="loginForm" style="margin-top: 10%;">
+      <div class="col-md-6 col-sm-12" >
+        <img src="img/authentication.png" width="100%" alt="">
+      </div>
+      <div class="col-md-6 col-sm-125 text-white p-4 rounded" align="center">
+        <div class="auth-p">
+        <h2>فرم ورود</h2>
+        <form method="post" action="">
+          <input type="text" id="username" name="username" placeholder="نام کاربری خود را وارد نمایید" class="form-control w-75 mt-3">
+          <input type="password" id="password" name="password" placeholder="رمز عبور خود را وارد کنید" class="form-control w-75 mt-3">
+          <div class="mt-3 w-75" align="right">
+          <input type="checkbox" id="showPasswordCheck" style="color: white;" onclick="showPassword()">
+          <label for="showPasswordCheck">نمایش کلمه عبور</label>
+          </div>
+          <button type="submit" class="btn btn-success btn-lg w-75 mt-2">ورود</button>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <div>
+      <div class="container-fluid d-lg-flex pt-5 pb-5 justify-content-center" style="background-color: #515C7C;">
+        <div class="container p-3 d-lg-flex">
+          <div class="col-md-7 col-sm-12">
+          <h4>چه کاری واستون قراره انجام بدیم؟</h4>
+          <p>
+            سایت ما یک شبکه اجتماعی هست . به این معنا که اینجا آدما به هم وصل میشن. 
+            <br>
+            خب دقیق تر بخوام بگم . شما شاید واستون سوال شده که امثال این کار رو نرم افزار های
+            خارجی بهترشم انجام میدن . ولی اشتباهتون همنیجاست. ما نمیخوایم دقیقا تقلیدی از نرم افزار یا
+            استارتاپ خارجی بکنیم بلکه یه شبکه اجتماعی تشکیل میدیم که افراد بتونن بسته به مهارت هایی که
+            دارن , حالا یا به کارفرما متصل شن یا هنری چیزی دارن بتونن مقاله هایی راجب آثارشون ارایه بدن
+            همچنین نمونه کارهاشون رو :)
+          </p>
+        </div>
+        <div class="col-md-5 mt-sm-4 mt-lg-0 p-sm-4 p-lg-0 col-sm-12">
+          <img src="img/Donuts.jpg" class="w-75" alt="">
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!----ending body---->
+
+    <!---footer starting--->
+
+    <footer>
+      <div class="footer-ex">
+        <ul>
+        <h4>SOCIAL MEDIA</h4>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+
+      </div>
+    </footer>
+
+    <!---footer ending--->
+
+    <script src="script.js"></script>
+</body>
+</html>
